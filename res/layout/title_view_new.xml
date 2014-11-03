@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="#ffffffff"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/left_back_btn"
+        style="@style/Text.Title_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/back_img"
+        android:minWidth="60dip" />
+
+    <TextView
+        android:id="@+id/title_copy_text"
+        style="@style/Text.Copy.Title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_weight="1" 
+        android:layout_gravity="center"
+       
+       />
+
+    <Button
+        android:id="@+id/show_dialog_btn"
+        style="@style/Text.Title_Button"
+        android:layout_width="40dp"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/topbar_view_list"
+        android:minWidth="30dip" />  
+
+</LinearLayout>

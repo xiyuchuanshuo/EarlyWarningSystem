@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dip"
+    android:background="@color/backgroundcolor"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/left_back_btn"
+        style="@style/Text.Title_Button"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/back_img"
+        android:minWidth="60dip" />
+
+    <TextView
+        android:id="@+id/title_copy_text"
+        style="@style/Text.Copy.Title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/show_dialog_btn"
+        style="@style/Text.Title_Button"
+        android:layout_width="40dp"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/topbar_view_list"
+        android:minWidth="30dip" />
+
+    <Button
+        android:id="@+id/complete_btn"
+        style="@style/Text.Title_Button"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:minWidth="30dip"
+        android:background="@drawable/map_upload_img" />
+
+</LinearLayout>

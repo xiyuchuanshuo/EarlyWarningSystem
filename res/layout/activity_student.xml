@@ -1,0 +1,160 @@
+<com.beiyuan.appyujing.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/student_main_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="35dip"
+            android:orientation="horizontal" >
+
+            <com.beiyuan.appyujing.view.CircularImage
+                android:id="@+id/student_main_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dip"
+                android:src="@drawable/head_img_a" />
+
+            <TextView
+                android:id="@+id/student_main_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@+id/student_main_ll"
+            android:layout_marginLeft="42dip"
+            android:layout_marginTop="10dip"
+            android:background="@android:color/darker_gray" />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_one"
+            android:layout_marginLeft="5dip"
+            android:divider="@null" />
+
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dip"
+            android:layout_below="@+id/lv"
+            android:layout_marginLeft="42dip"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/exit_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_two"
+            android:layout_marginLeft="44dip"
+            android:layout_marginTop="20dp"
+            android:text="@string/exit_software"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <com.beiyuan.appyujing.view.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee" >
+
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/realtabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+              android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="bottom|center_horizontal"
+                 >
+
+                <RadioGroup
+                    android:id="@+id/tab_rg_menu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#eeeeee"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/tab_rb_1"
+                        style="@style/main_tab_bottom"
+                        android:layout_marginTop="1.0dip"
+                        android:checked="true"
+                        android:drawableTop="@drawable/tab_selector_voice"
+                        android:tag="radio_button0" 
+                        android:text="语音" />
+
+                    <RadioButton
+                        android:id="@+id/tab_rb_2"
+                        style="@style/main_tab_bottom"
+                        android:layout_marginTop="1.0dip"
+                        android:drawableTop="@drawable/tab_selector_news"
+                        android:tag="radio_button1" 
+                          android:text="新闻" />
+
+                    <RadioButton
+                        android:id="@+id/tab_rb_3"
+                        style="@style/main_tab_bottom"
+                        android:layout_marginTop="1.0dip"
+                        android:drawableTop="@drawable/tab_selector_map"
+                        android:tag="radio_button2"
+                         android:text="地图"  />
+
+                    <RadioButton
+                        android:id="@+id/tab_rb_4"
+                        style="@style/main_tab_bottom"
+                        android:layout_marginTop="1.0dip"
+                        android:drawableTop="@drawable/tab_selector_emerge"
+                        android:tag="radio_button3" 
+                        android:text="紧急情况" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <android.support.v4.app.FragmentTabHost
+                android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0" />
+            </android.support.v4.app.FragmentTabHost>
+        </LinearLayout>
+    </com.beiyuan.appyujing.view.MyRelativeLayout>
+
+</com.beiyuan.appyujing.view.DragLayout>

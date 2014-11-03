@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dip"
+    android:background="@color/backgroundcolor"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/left_back"
+        style="@style/Text.Title_Button"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/side_btn_img"
+        android:minWidth="40dip" />
+
+    <EditText
+        android:id="@+id/voice_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/right_voice"
+        style="@style/Text.Title_Button"
+        android:layout_width="40dp"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/voice_search"
+        android:minWidth="30dip" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/lv1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:background="@drawable/update_back_img_one"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/back_img" />
+
+        <com.beiyuan.appyujing.view.CircularImage
+            android:id="@+id/get_head_img"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dip"
+            android:src="@drawable/head_img_a" />
+
+        <TextView
+            android:id="@+id/get_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="小娟"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/lv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black_light_2"
+        android:layout_below="@+id/lv1">
+        <TextView
+            android:id="@+id/get_class_name"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="40dip"
+            android:text="信息管理与信息系统" 
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/get_stu_num"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="40dip"
+            android:text="201142605" 
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lv2"
+        android:background="@color/white" >
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

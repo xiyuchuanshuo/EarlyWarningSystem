@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rinearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/backgroundcolor" >
+
+        <Button
+            android:id="@+id/left_back"
+            style="@style/Text.Title_Button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/side_btn_img"
+            android:minWidth="40dip" />
+
+        <Button
+            android:id="@+id/right_more"
+            style="@style/Text.Title_Button"
+            android:layout_width="40dp"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/side_btn_img"
+            android:minWidth="30dip" />
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/simple_route_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rinearlayout"
+        android:layout_weight="1" >
+    </com.amap.api.maps.MapView>
+
+    <Button
+        android:id="@+id/buttontype"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="60dip"
+        android:layout_weight="1"
+        android:background="@drawable/map_type_img" />
+
+    <Button
+        android:id="@+id/navigation"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttontype"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"
+        android:layout_weight="1"
+        android:background="@drawable/map_location_img_down"
+        android:visibility="invisible" />
+
+</RelativeLayout>
